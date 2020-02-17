@@ -12,8 +12,8 @@ export default () => {
     setQuestion(question);
   }, []);
 
-  function choose(id) {
-    const correct = id === question.answer;
+  function choose(answer) {
+    const correct = answer === question.answer;
     setIsCorrect(correct);
     setAnswered(true);
   }
